@@ -6,7 +6,20 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int score;
+    scanf("%d", &score);
+
+    if( (100>=score) && (score>=90) ){
+        printf("A\n");
+    }else if((90>score) && (score>=80)){
+        printf("B\n");
+    }else if((80>score) && (score>=70)){
+        printf("C\n");
+    }else if((70>score) && (score>=60)){
+        printf("D\n");
+    }else if((60>score) && (score>=0)){
+        printf("F\n");
+    }
 
     return 0;
 }

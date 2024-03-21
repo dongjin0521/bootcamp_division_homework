@@ -6,7 +6,20 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int n = 0;
+    
+    while(1){
+        scanf("%d", &n);
+        
+        if(n<=0){
+            printf("X\n");
+        }
 
-    return 0;
+        else{
+            int sum = (n * (n + 1)) / 2;
+            printf("%d\n", sum);
+            return 0;
+        }
+    }
+
 }

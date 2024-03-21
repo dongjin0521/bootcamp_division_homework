@@ -6,7 +6,16 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num, rvsNum = 0;
+    scanf("%d", &num);
+    
+    rvsNum += (num % 10) * 100;
+    num /= 10;
+    rvsNum += (num % 10) * 10;
+    num /= 10;
+    rvsNum += num;
+
+    printf("%d\n", rvsNum);
 
     return 0;
 }
